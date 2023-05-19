@@ -6,3 +6,16 @@ Present efforts have led to the compilation of extensive clinical and neurobiolo
 The Accelerating Medicines Partnership® Parkinson's Disease (AMP®PD), the organizer of the competition, is a collaborative initiative involving government entities, industry representatives, and nonprofit organizations. Managed through the Foundation of the National Institutes of Health (FNIH), this partnership has established the AMP PD Knowledge Platform. This platform incorporates in-depth molecular characterization and longitudinal clinical profiling of individuals with Parkinson's disease, with the primary objective of identifying and validating diagnostic, prognostic, and disease progression biomarkers for this condition.
 ## Motivation
 The goal of this project is to predict MDS-UPDRS scores, which measure progression in patients with Parkinson's disease. The Movement Disorder Society-Sponsored Revision of the Unified Parkinson's Disease Rating Scale (MDS-UPDRS) is a comprehensive assessment of both motor and non-motor symptoms associated with Parkinson's. We hope to develop a model trained on data of protein and peptide levels over time in subjects with Parkinson’s disease versus normal age-matched control subjects. This model can help shed light into which molecules change as Parkinson’s disease progresses.
+## Tools/Modules
+D3.js
+Plotly
+MatPlotLib
+Sklearn
+Tensorflow
+numpy
+Pandas
+Peptides.py
+PyBiomed
+PyProtein
+Flask
+SQL Alchemy
