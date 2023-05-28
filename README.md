@@ -19,3 +19,41 @@ PyBiomed
 PyProtein
 Flask
 SQL Alchemy
+## UPDRS classification
+The below UPDRS classification was used for analysis:
+
+<p align="center">
+<img src="https://github.com/ezgibooth/Predicting_Parkinsons_Progression/assets/118090932/b4d23890-1f4d-436b-b559-c59c1f979b55" width="600" height="400">
+</p>
+
+## Analysis Results
+
+* UPDRS Score distribution of patients on medication vs. not on medication show that UPDRS scores are higher for patients not on medication:
+<p align="center">
+<img src="https://github.com/ezgibooth/Predicting_Parkinsons_Progression/assets/118090932/366fe008-65c4-4c99-a632-84bfedbe8fbc" width="800" height="600">
+</p>
+
+* Below shows the median UPDRS scores over time. The analysis indicates UPDRS 4 score only increases after mnonth 4 and is not a good indicator for early disease progression analysis
+<p align="center">
+<img src="https://github.com/ezgibooth/Predicting_Parkinsons_Progression/assets/118090932/ed39c45f-fa7f-41be-a878-fb9b28399269" width="600" height="400">
+</p>
+
+* Based on k-means analysis, proteins were clustered into four distinct groups:
+<p align="center">
+<img src="https://github.com/ezgibooth/Predicting_Parkinsons_Progression/assets/118090932/5d27ae68-f30c-494d-ae81-eff1d10b4b6c" width="700" height="400">
+</p>
+
+* We decided to focus on clusters 0, 2, 3 to get a better understanding of the protein levels over time, as shown below. While proteins in cluster 0 did not change much over time, protein levels in clusters 2 and 3 showed a greater variance over time, indicating they might be better candidates for using as biomarkers:
+<p align="center">
+<img src="https://github.com/ezgibooth/Predicting_Parkinsons_Progression/assets/118090932/0239d42f-500d-43dd-b73f-e5aaa57ee614" width="700" height="400">
+</p>
+
+* The below table the biological relevance of proteins found in each cluster. Since PD is a neurological disease, it is exciting to find proteins that are involved in brain and neuron related functions. Additionally, the two proteins, Prostaglandin and Serotransferin levels are significantly different in patients with low PD scores compared to those with high PD socres:
+<p align="center">
+<img src="https://github.com/ezgibooth/Predicting_Parkinsons_Progression/assets/118090932/abf18924-d603-47e7-8c20-a48bc579834d" width="700" height="400">
+</p>
+
+* Using the protein levels from the two above mentioned proteins we were able to create a neural network model that was able to predict PD progression with 0.77 accuracy.
+<p align="center">
+<img src="https://github.com/ezgibooth/Predicting_Parkinsons_Progression/assets/118090932/8bba257a-ede1-4c45-aaf9-bca191240352" width="700" height="350">
+</p>
